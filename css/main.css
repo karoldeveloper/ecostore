@@ -1,1 +1,60 @@
-/*# sourceMappingURL=main.css.map */
+body {
+  background-color: #fafafa;
+  color: #201E1F;
+  font-family: "IBM Plex Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  font-size: x-large;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  width: 100%;
+  max-width: 25em;
+  height: auto;
+  border-radius: 20px;
+}
+header .hero-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+header .hero-info h1 {
+  font-weight: 500;
+  margin-bottom: 0.25em;
+  margin-top: 0.25em;
+}
+header .hero-info p {
+  font-weight: lighter;
+  text-align: center;
+  padding-bottom: 0.25em;
+}
+header button {
+  background: none;
+  border-style: none;
+}
+header button {
+  padding: 20px;
+  width: 20em;
+  background-color: #0B4F47;
+  color: white;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: large;
+  letter-spacing: 0.03em;
+}/*# sourceMappingURL=main.css.map */

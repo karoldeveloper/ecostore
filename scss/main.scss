@@ -1,0 +1,78 @@
+$primary-color: #fafafa;
+$secondary-color: #678159;
+$tertiary-color: #F2C5B7;
+$quartenary-color: #0B4F47;
+
+$text-primary-color: #201E1F;
+$font-stack: 'IBM Plex Sans', sans-serif;
+$paragraph-size: 1.5em;
+
+@mixin flexCenter($direction, $content, $align) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $content;
+    align-items: $align;
+}
+
+@mixin buttonStyle {
+    button {
+        background: none;
+        border-style: none;
+    }
+}
+
+body {
+    background-color: $primary-color;
+    color: $text-primary-color;
+    font-family: $font-stack;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    @include flexCenter(row, space-between, center);
+    padding: 20px;
+    // position: fixed;
+    font-size: x-large;
+}
+
+header {
+    @include flexCenter(column, center, center);
+    img {
+        width: 100%;
+        max-width: 25em;
+        height: auto;
+        border-radius: 20px;
+    };
+    
+    .hero-info {
+        @include flexCenter(column, center, center);
+        padding: 1em;
+
+        
+        h1 {
+            font-weight: 500;
+            margin-bottom: 0.25em;
+            margin-top: 0.25em;
+        }
+        
+        p {
+            font-weight: lighter;
+            text-align: center;
+            padding-bottom: 0.25em;
+        }
+    }
+
+    @include buttonStyle;
+    button {
+        padding: 20px;
+        width: 20em;
+        background-color: $quartenary-color;
+        color: white;
+        border-radius: 20px;
+        font-weight: bold;
+        font-size: large;
+        letter-spacing: 0.03em;
+    }
+}
+
