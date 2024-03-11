@@ -32,14 +32,25 @@ $layout-breakpoint-small: 480px;
             display: none;
         }
     }
+    header {
+        @include flexCenter(row-reverse, space-between, center);
+        text-align: start;
+
+        .hero-info {
+            @include flexCenter(column, space-evenly, flex-start);
+            gap: 25px;
+        }
+    }
   }
 
+// small screens
+
 @media (max-width: $layout-breakpoint-small) {
-nav {
-    #nav-icons {
-        display: none;
+    nav {
+        #nav-icons {
+            display: none;
+        }
     }
-}
 }
 
 body {
@@ -47,14 +58,13 @@ body {
     color: $text-primary-color;
     font-family: $font-stack;
     margin: 0;
-    padding: 0;
+    padding: 1em 2em 1em 2em;
 }
 
 nav {
     @include flexCenter(row, space-between, center);
-    padding: 20px;
-    // position: fixed;
     font-size: x-large;
+
     #nav-icons {
         @include buttonStyle;
         color: $text-primary-color;
@@ -62,7 +72,8 @@ nav {
 }
 
 header {
-    @include flexCenter(column, center, center);
+    font-size: 1.25em;
+    
     img {
         width: 100%;
         max-width: 25em;
@@ -71,9 +82,8 @@ header {
     };
     
     .hero-info {
-        @include flexCenter(column, center, center);
-        padding: 1em;
-
+        @include flexCenter(column, center, start);
+        width: -webkit-fill-available;
         
         h1 {
             font-weight: 500;
@@ -83,7 +93,7 @@ header {
         
         p {
             font-weight: lighter;
-            text-align: center;
+            // text-align: center;
             padding-bottom: 0.25em;
         }
     }

@@ -2,6 +2,20 @@
   nav #menu {
     display: none;
   }
+  header {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    text-align: start;
+  }
+  header .hero-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    gap: 25px;
+  }
 }
 @media (max-width: 480px) {
   nav #nav-icons {
@@ -13,7 +27,7 @@ body {
   color: #201E1F;
   font-family: "IBM Plex Sans", sans-serif;
   margin: 0;
-  padding: 0;
+  padding: 1em 2em 1em 2em;
 }
 
 nav {
@@ -21,7 +35,6 @@ nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
   font-size: x-large;
 }
 nav #nav-icons {
@@ -33,10 +46,7 @@ nav #nav-icons button {
 }
 
 header {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  font-size: 1.25em;
 }
 header img {
   width: 100%;
@@ -48,8 +58,8 @@ header .hero-info {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-  padding: 1em;
+  align-items: start;
+  width: -webkit-fill-available;
 }
 header .hero-info h1 {
   font-weight: 500;
@@ -58,7 +68,6 @@ header .hero-info h1 {
 }
 header .hero-info p {
   font-weight: lighter;
-  text-align: center;
   padding-bottom: 0.25em;
 }
 header button {
