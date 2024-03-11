@@ -7,6 +7,9 @@ $text-primary-color: #201E1F;
 $font-stack: 'IBM Plex Sans', sans-serif;
 $paragraph-size: 1.5em;
 
+$layout-breakpoint-large: 1024px;
+$layout-breakpoint-small: 480px;
+
 @mixin flexCenter($direction, $content, $align) {
     display: flex;
     flex-direction: $direction;
@@ -19,6 +22,24 @@ $paragraph-size: 1.5em;
         background: none;
         border-style: none;
     }
+}
+
+// large screens
+
+@media (min-width: $layout-breakpoint-large) {
+    nav {
+        #menu {
+            display: none;
+        }
+    }
+  }
+
+@media (max-width: $layout-breakpoint-small) {
+nav {
+    #nav-icons {
+        display: none;
+    }
+}
 }
 
 body {
@@ -34,6 +55,10 @@ nav {
     padding: 20px;
     // position: fixed;
     font-size: x-large;
+    #nav-icons {
+        @include buttonStyle;
+        color: $text-primary-color;
+    }
 }
 
 header {

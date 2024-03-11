@@ -1,3 +1,13 @@
+@media (min-width: 1024px) {
+  nav #menu {
+    display: none;
+  }
+}
+@media (max-width: 480px) {
+  nav #nav-icons {
+    display: none;
+  }
+}
 body {
   background-color: #fafafa;
   color: #201E1F;
@@ -13,6 +23,13 @@ nav {
   align-items: center;
   padding: 20px;
   font-size: x-large;
+}
+nav #nav-icons {
+  color: #201E1F;
+}
+nav #nav-icons button {
+  background: none;
+  border-style: none;
 }
 
 header {
