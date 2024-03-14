@@ -1,6 +1,6 @@
 $primary-color: #fafafa;
 $secondary-color: #678159;
-$tertiary-color: #F2C5B7;
+$tertiary-color: #C49F87;
 $quartenary-color: #0B4F47;
 
 $text-primary-color: #201E1F;
@@ -40,6 +40,11 @@ $layout-breakpoint-small: 480px;
             @include flexCenter(column, space-evenly, flex-start);
             gap: 25px;
         }
+    }
+    .cards {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        column-gap: 6em;
     }
   }
 
@@ -115,7 +120,7 @@ header {
     }
 }
 
-#health {
+.products {
 
     .cards {
         svg {
@@ -189,5 +194,11 @@ header {
             }
         }
     
+    }
+}
+
+#furniture {
+    .card-item {
+        background-color: $tertiary-color;
     }
 }

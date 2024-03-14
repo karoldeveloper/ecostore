@@ -16,6 +16,12 @@
     align-items: flex-start;
     gap: 25px;
   }
+  .cards {
+    flex-wrap: wrap;
+    justify-content: space-between;
+    -moz-column-gap: 6em;
+         column-gap: 6em;
+  }
 }
 @media (max-width: 480px) {
   nav #nav-icons {
@@ -89,17 +95,17 @@ header button {
   letter-spacing: 0.03em;
 }
 
-#health .cards {
+.products .cards {
   display: flex;
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
   overscroll-behavior: contain;
 }
-#health .cards svg {
+.products .cards svg {
   display: none;
 }
-#health .cards .card-item {
+.products .cards .card-item {
   width: 15em;
   height: 22em;
   margin: 10px;
@@ -108,10 +114,10 @@ header button {
   color: white;
   background-color: #678159;
 }
-#health .cards .card-item .card-icon {
+.products .cards .card-item .card-icon {
   position: absolute;
 }
-#health .cards .card-item .card-img {
+.products .cards .card-item .card-img {
   height: 235px;
   width: 100%;
   background-position: center;
@@ -119,24 +125,27 @@ header button {
   background-repeat: no-repeat;
   border-radius: 8px 8px 0 0;
 }
-#health .cards .card-item .card-img img {
+.products .cards .card-item .card-img img {
   height: 180px;
   width: 100%;
 }
-#health .cards .card-item .card-description {
+.products .cards .card-item .card-description {
   padding: 0.75em;
   margin: 0;
   width: 150px;
   width: 200px;
 }
-#health .cards .card-item .card-description .title {
+.products .cards .card-item .card-description .title {
   margin: 0;
   font-size: large;
   font-weight: bold;
   letter-spacing: 0.25px;
 }
-#health .cards .card-item .card-description .card-text .description {
+.products .cards .card-item .card-description .card-text .description {
   margin: 0;
   text-wrap: wrap;
   font-size: medium;
+}
+#furniture .card-item {
+  background-color: #C49F87;
 }/*# sourceMappingURL=main.css.map */
