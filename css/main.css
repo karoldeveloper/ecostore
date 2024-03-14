@@ -72,6 +72,7 @@ nav #nav-icons {
 nav #nav-icons button {
   background: none;
   border-style: none;
+  cursor: pointer;
 }
 
 header {
@@ -102,6 +103,7 @@ header .hero-info p {
 header button {
   background: none;
   border-style: none;
+  cursor: pointer;
 }
 header button {
   padding: 20px;
@@ -112,6 +114,12 @@ header button {
   font-weight: bold;
   font-size: large;
   letter-spacing: 0.03em;
+  box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+  transition: width 1s, box-shadow 1s;
+}
+header button:hover {
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  width: 21em;
 }
 
 .products .cards {
@@ -127,10 +135,11 @@ header button {
   width: 15em;
   height: 22em;
   margin: 10px;
-  border-radius: 8px;
   display: inline-block;
   color: white;
   background-color: #678159;
+  border-radius: 8px;
+  box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 .products .cards .card-item .card-img {
   height: 235px;
@@ -179,4 +188,24 @@ header button {
   -o-object-fit: cover;
      object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+
+#location div img {
+  width: 100%;
+  height: 50vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+footer {
+  background-color: #0B4F47;
+  color: white;
+}
+footer .container .social-medias {
+  margin: auto;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+footer .container .social-medias img {
+  margin: 0 0.5em 0 0.5em;
 }/*# sourceMappingURL=main.css.map */

@@ -21,6 +21,7 @@ $layout-breakpoint-small: 480px;
     button {
         background: none;
         border-style: none;
+        cursor: pointer;
     }
 }
 
@@ -67,6 +68,8 @@ $layout-breakpoint-small: 480px;
             }
         }
     }
+
+    
   };
 
 // small screens
@@ -139,6 +142,12 @@ header {
         font-weight: bold;
         font-size: large;
         letter-spacing: 0.03em;
+        box-shadow: rgba(0, 0, 0, 0.09) 0px 3px 12px;
+        transition: width 1s, box-shadow 1s;
+        &:hover {
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+            width: 21em;
+        }
     }
 }
 
@@ -157,10 +166,11 @@ header {
             width: 15em;
             height: 22em;
             margin: 10px;
-            border-radius: 8px;
             display: inline-block;
             color: white;
             background-color: $secondary-color;
+            border-radius: 8px;
+            box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
     
             // .card-icon {
             //     // position: absolute;
@@ -235,4 +245,31 @@ header {
 
 
     }
+}
+
+#location {
+    div img {
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+}
+
+footer {
+    background-color: $quartenary-color;
+    color: white;
+
+    .container {
+        
+        .social-medias {
+            margin: auto;
+            width: fit-content;
+            
+            img {
+                margin: 0 0.5em 0 0.5em;
+            }
+        }
+        
+    }
+    
 }
