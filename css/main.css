@@ -22,6 +22,12 @@
     -moz-column-gap: 6em;
          column-gap: 6em;
   }
+  #about .mission-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 }
 @media (max-width: 480px) {
   nav #nav-icons {
@@ -100,7 +106,6 @@ header button {
   overflow-x: auto;
   overflow-y: hidden;
   white-space: nowrap;
-  overscroll-behavior: contain;
 }
 .products .cards svg {
   display: none;
@@ -113,9 +118,6 @@ header button {
   display: inline-block;
   color: white;
   background-color: #678159;
-}
-.products .cards .card-item .card-icon {
-  position: absolute;
 }
 .products .cards .card-item .card-img {
   height: 235px;
@@ -146,6 +148,12 @@ header button {
   text-wrap: wrap;
   font-size: medium;
 }
+
 #furniture .card-item {
   background-color: #C49F87;
+}
+
+#about .mission-section {
+  margin: auto;
+  text-align: center;
 }/*# sourceMappingURL=main.css.map */

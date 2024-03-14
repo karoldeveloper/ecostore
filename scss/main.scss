@@ -46,7 +46,13 @@ $layout-breakpoint-small: 480px;
         justify-content: space-between;
         column-gap: 6em;
     }
-  }
+
+    #about {
+        .mission-section {
+            @include flexCenter(row, space-evenly, center);
+        }
+    }
+  };
 
 // small screens
 
@@ -60,7 +66,7 @@ $layout-breakpoint-small: 480px;
 
 * {
     box-sizing: border-box;
-}
+};
 
 body {
     background-color: $primary-color;
@@ -126,12 +132,10 @@ header {
         svg {
             display: none;
         }
-        // @include flexCenter(row, center, center);
         display: flex;
         overflow-x: auto;
         overflow-y: hidden;
         white-space: nowrap;
-        overscroll-behavior: contain;
 
         .card-item {
             width: 15em;
@@ -139,30 +143,25 @@ header {
             margin: 10px;
             border-radius: 8px;
             display: inline-block;
-            // padding: 20px;
             color: white;
             background-color: $secondary-color;
     
-            .card-icon {
-                position: absolute;
-                // display: flex;
-                // justify-content: end;
-            }
+            // .card-icon {
+            //     // position: absolute;
+            //     // display: flex;
+            //     // justify-content: end;
+            // }
             .card-img {
                 height: 235px;
                 width: 100%;
-                // background-image: url(/assets/img/products/toothbrush.jpg);
                 background-position: center;
                 background-size: cover;
                 background-repeat: no-repeat;
                 border-radius: 8px 8px 0 0;
         
                 img {
-                    // width: 50%;
-                    // height: 12.6em;
                     height: 180px;
                     width: 100%;
-        
                 }
             }
         
@@ -187,18 +186,21 @@ header {
                         font-size: medium;
                     }
                 }
-                .card-button {
-        
-                }
-        
             }
         }
-    
     }
 }
 
 #furniture {
     .card-item {
         background-color: $tertiary-color;
+    }
+}
+
+#about {
+    .mission-section {
+        // @include flexCenter(column, center, center);
+        margin: auto;
+        text-align: center;
     }
 }
