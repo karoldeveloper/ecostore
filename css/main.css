@@ -181,9 +181,6 @@ header button a:visited, header button a:link {
   overflow-y: hidden;
   white-space: nowrap;
 }
-.products .cards svg {
-  display: none;
-}
 .products .cards .card-item {
   width: 15em;
   height: 22em;
@@ -194,6 +191,10 @@ header button a:visited, header button a:link {
   border-radius: 8px;
   box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
+.products .cards .card-item .card-icon {
+  width: 1.7em;
+  margin-block-end: auto;
+}
 .products .cards .card-item .card-img {
   height: 235px;
   width: 100%;
@@ -201,10 +202,9 @@ header button a:visited, header button a:link {
   background-size: cover;
   background-repeat: no-repeat;
   border-radius: 8px 8px 0 0;
-}
-.products .cards .card-item .card-img img {
-  height: 180px;
-  width: 100%;
+  display: flex;
+  justify-content: end;
+  padding: 1em;
 }
 .products .cards .card-item .card-description {
   padding: 0.75em;
