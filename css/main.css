@@ -236,7 +236,8 @@ header button a:visited, header button a:link {
 #gallery .images img {
   border-radius: 8px;
   margin-bottom: 1em;
-  width: 80%; /* Adjust as needed */
+  height: 50vh;
+  width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;

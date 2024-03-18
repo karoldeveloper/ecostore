@@ -273,7 +273,6 @@ header {
 
 #about {
     .mission-section {
-        // @include flexCenter(column, center, center);
         margin: auto;
         text-align: center;
     }
@@ -284,10 +283,8 @@ header {
         img {
             border-radius: 8px;
             margin-bottom: 1em;
-
-            // height: 50vh;
-            // width: 100%;
-            width: 80%; /* Adjust as needed */
+            height: 50vh;
+            width: 100%;
             object-fit: cover;
             box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
         }
